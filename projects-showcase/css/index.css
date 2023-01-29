@@ -13,10 +13,9 @@
 }
 
 /* font-family: 'Heebo', sans-serif; */
-
 /* font-family: 'Barlow', sans-serif; */
 
-
+/* Main Pages */
 .container {
     max-width: 1320px;
     margin: auto;
@@ -158,8 +157,17 @@ img:not([src]) {
     }
 }
 
-/* Media Query */
+/* Main Pages End  */
 
+
+/* Detail Project Page*/
+
+
+
+/* Detail Project PageEnd  */
+
+
+/* Media Query */
 @media only screen and (min-width: 320px) {
     header {
         padding: 0px 20px;
