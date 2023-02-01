@@ -1,0 +1,240 @@
+:root {
+    --grey: #dcdce2;
+}
+
+
+/* Loader Start  */
+.loader-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff7f2;
+    z-index: 999;
+}
+
+.loader-design {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.gegga {
+    width: 0;
+}
+
+.loader-design svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.snurra {
+    filter: url(#gegga);
+}
+
+.stopp1 {
+    stop-color: #f56915;
+}
+
+.stopp2 {
+    stop-color: #f0a80e;
+}
+
+.halvan {
+    animation: Snurra1 10s infinite linear;
+    stroke-dasharray: 180 800;
+    fill: none;
+    stroke: url(#gradient);
+    stroke-width: 23;
+    stroke-linecap: round;
+}
+
+.strecken {
+    animation: Snurra1 3s infinite linear;
+    stroke-dasharray: 26 54;
+    fill: none;
+    stroke: url(#gradient);
+    stroke-width: 23;
+    stroke-linecap: round;
+}
+
+.skugga {
+    filter: blur(5px);
+    opacity: 0.3;
+    position: absolute;
+    transform: translate(3px, 3px);
+}
+
+@keyframes Snurra1 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -403px;
+    }
+}
+/* Loader End  */
+
+/* Common Css Start */
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/* Common css End  */
+
+
+/* Header Start  */
+.header {
+    position: relative;
+    max-width: 100%;
+    background: rgb(242,108,43);
+    background: linear-gradient(90deg, rgba(242,108,43,1) 1%, rgba(252,198,46,1) 34%, rgba(255,162,0,1) 83%);
+}
+.site-header {
+    top: 0;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+}
+
+.site-header .left-header, 
+.site-header .right-header {
+    display: flex;
+}
+
+.site-header.sticky-header {
+    background-color: #ffffff;
+    color: rgb(242,108,43);
+}
+
+.site-header .site-branding {
+    display: flex;
+    align-items: center;
+}
+
+.site-header .site-branding svg {
+    margin-right: 10px;
+}
+
+.site-header .menu-header .toggle-button {
+    display: none;
+}  
+
+.site-header .menu-header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.site-header .menu-header ul li a {
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.site-header .menu-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 0px;
+}
+.site-header .menu-search input{
+    border-radius: 20px;
+    border: none;
+    padding: 5px 10px;
+}
+
+.site-header .menu-search input:focus{
+    outline: none;
+    border: 1px solid var(--grey);
+}
+
+.site-header .menu-search button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.site-header .menu-shopping {
+    display: flex;
+    align-items: center;
+}
+.site-header .menu-shopping svg {
+    margin-left: 10px;
+}
+
+/* Header End  */
+
+
+/* Main Banner Start  */
+.main-banner{
+    height: 400px;
+    background: rgb(242,108,43);
+    background: linear-gradient(90deg, rgba(242,108,43,1) 1%, rgba(252,198,46,1) 34%, rgba(255,162,0,1) 83%);
+    display: flex;
+}
+
+.images-banner {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50px);
+}
+.images-banner img{
+    height: 400px;
+}
+.text-banner {
+    flex: 1;
+    margin: auto;
+}
+.text-banner h1{
+    color: #ffffff;
+}
+.text-banner a{
+    color: #f26c2b;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Main Banner End  */
+
+/* Fruit Stock Start  */
+.fruit-stock .stock-today {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    border-radius: 50px;
+    border: 1px solid #8f8e8d;
+}
+.fruit-stock .stock-today .stock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #8f8e8d;
+    width: 100%;
+}
+.fruit-stock .stock-today .stock:first-child {
+    background-color: #f5e0b3;
+    border-radius: 50px 0px 0px 50px;
+    color: #f26c2b;
+    font-weight: bold;
+}
+.fruit-stock .stock-today .stock:last-child {
+    border-radius: 0px 50px 50px 0px;
+}
+.fruit-stock .stock-today img{
+    height: 40px;
+}
+/* Fruit Stock End  */

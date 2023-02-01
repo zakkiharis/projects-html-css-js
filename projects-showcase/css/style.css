@@ -161,7 +161,22 @@ img:not([src]) {
 
 
 /* Detail Project Page*/
+.detail-project {
+    display: flex;
+    /* flex-direction: column; */
+}
 
+.show-project {
+    background-color: var(--dark-violet);
+    height: 100px;
+    flex: 3;
+}
+
+.resource-project {
+    background-color: var(--indigo);
+    height: 100px;
+    flex: 1;
+}
 
 
 /* Detail Project PageEnd  */
@@ -186,6 +201,12 @@ img:not([src]) {
         grid-template-columns: 1fr 1fr;
     
     }
+
+    .detail-project {
+        display: flex;
+    }
+    
+
 }
 @media only screen and (min-width: 801px) {
     

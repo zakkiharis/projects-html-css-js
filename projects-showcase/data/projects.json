@@ -1,5 +1,6 @@
 [
-    {
+    {   
+        "id": 1,
         "name" : "Project Showcase",
         "date" : "15 Desember 2022",
         "stack" : ["HTML", "CSS", "JS"],
@@ -7,7 +8,7 @@
         "images": "./assets/images/food-delivery.png",
         "desc" : "Digunakan untuk memamerkan beberap amini projek menggunakan html css dan javascript"
     },
-    {
+    {   "id": 2,      
         "name" : "Project Showcase",
         "date" : "15 Januari 2022",
         "stack" : ["HTML", "CSS", "JS"],
@@ -15,7 +16,7 @@
         "images": "https://w7.pngwing.com/pngs/915/345/png-transparent-multicolored-balloons-illustration-balloon-balloon-free-balloons-easter-egg-desktop-wallpaper-party-thumbnail.png",
         "desc" : "Digunakan untuk memamerkan beberap amini projek menggunakan html css dan javascript"
     },
-    {
+    {   "id": 3,   
         "name" : "Project Showcase",
         "date" : "15 Desember 2022",
         "stack" : ["HTML", "CSS", "JS"],
