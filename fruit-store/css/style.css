@@ -85,7 +85,6 @@
     margin: auto;
 }
 
-
 /* Common css End  */
 
 
@@ -103,6 +102,7 @@
     justify-content: space-between;
     max-width: 1140px;
     margin: auto;
+    padding: 10px 0px;
 }
 
 .site-header .left-header, 
@@ -215,14 +215,13 @@
     justify-content: space-between;
     margin: 50px;
     border-radius: 50px;
-    border: 1px solid #8f8e8d;
 }
 .fruit-stock .stock-today .stock {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    border: 1px solid #8f8e8d;
+    padding: 5px;
+    border: 1px solid #b9b9b8;
     width: 100%;
 }
 .fruit-stock .stock-today .stock:first-child {
@@ -234,7 +233,57 @@
 .fruit-stock .stock-today .stock:last-child {
     border-radius: 0px 50px 50px 0px;
 }
+.fruit-stock .stock-today .stock:not(:last-child) {
+    border-right: none;
+}
 .fruit-stock .stock-today img{
     height: 40px;
 }
 /* Fruit Stock End  */
+
+
+/* Fruits Cateogry Start */
+.fruit-categories {
+    display: flex;
+    justify-content: space-between;
+}
+.fruit-categories img{
+    height: 40px;
+    width: 40px;
+}   
+/* .fruit-categories .fruit-card {
+    flex: 1;
+    background-color: #f56915;
+    margin: 0px 20px;
+    height: 100px;
+    border-radius: 5px;
+} */
+.fruit-categories .citrus {
+    flex: 1;
+    background-color: #f56915;
+    margin: 0px 20px;
+    height: 100px;
+    border-radius: 5px;
+}
+.fruit-categories .tropical {
+    flex: 1;
+    background-color: #f56915;
+    margin: 0px 20px;
+    height: 100px;
+    border-radius: 5px;
+}
+.fruit-categories .apple-pears {
+    flex: 1;
+    background-color: #f56915;
+    margin: 0px 20px;
+    height: 100px;
+    border-radius: 5px;
+}
+.fruit-categories .avocados {
+    flex: 1;
+    background-color: #f56915;
+    margin: 0px 20px;
+    height: 100px;
+    border-radius: 5px;
+}
+/* Fruits Cateogry  End*/
